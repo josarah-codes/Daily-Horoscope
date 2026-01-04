@@ -1,0 +1,71 @@
+import random
+import time
+
+print("Welcome traveller. My name is Mystic Meg, the greatest Pyschic on the web. Let me consult my crystal ball and the stars for your fortunes!")
+time.sleep(2)
+horoscope = (input("What is your star sign?: "))
+print("...")
+time.sleep(3)
+
+fortune_number = random.randint(1,12)
+
+if fortune_number == 1:
+    fortune_text = "This week, your enthusiasm might scare your to-do list into hiding. Channel that fire into reorganising your digital life — you’ll feel surprisingly refreshed. A random compliment today could spark something interesting."
+if fortune_number == 2:
+    fortune_text = "You crave stability, but the universe is handing you an unfamiliar snack instead — try a new routine. A small risk midweek could pay off in unexpected comfort (think: better coffee or a comfier chair)."
+if fortune_number == 3:
+    fortune_text = "You’ll have too many ideas but just enough time for one great one. Skip the small talk and dive into a deeper conversation. Your wit could accidentally solve someone else’s problem."
+if fortune_number == 4:
+    fortune_text = "You’re extra intuitive right now, so trust the weird hunch. An old song, message, or memory will resurface — use it as creative fuel, not an emotional detour."
+if fortune_number == 5:
+    fortune_text = "Your charisma is operating at “solar flare” level. Make use of it, but avoid hogging the spotlight in group chats. A small act of generosity will have a bigger ripple than expected."
+if fortune_number == 6:
+    fortune_text = "Plans may wobble midweek, but your adaptability saves the day. Make space for a brain break — perfection thrives on rest, not exhaustion. A misplaced item holds a small but happy surprise."
+if fortune_number == 7:
+    fortune_text = "Harmony comes easiest when you stop trying to please everyone. Say “no” early and often. Your creative side is quietly begging for something messy — paint, cook, or doodle your peace."
+if fortune_number == 8:
+    fortune_text = "You’re sharper than ever, but don’t over-analyse every glance. Let intuition lead in one decision — it’ll impress even your rational side. Passionate conversations ignite valuable insights."
+if fortune_number == 9:
+    fortune_text = "Adventure calls, even if it’s just a new recipe or route to work. Your optimism is contagious but be careful not to skip the details. Midweek brings a “why not?” moment worth saying yes to."
+if fortune_number == 10:
+    fortune_text = "A short delay turns into a hidden blessing — patience will earn you more than speed this week. Someone quietly admires your dedication, even if they haven’t said it yet."
+if fortune_number == 11:
+    fortune_text = "A wild idea is worth exploring. Don’t censor your creativity; just map out the consequences before you jump. Old connections may resurface with new relevance."
+if fortune_number == 12:
+    fortune_text = "Dreams blur with reality in amusing ways — take notes. Your empathy makes you a magnet for other people’s emotions, so protect your downtime. A spontaneous plan could lead to laughter and insight."
+
+
+horoscope_text = ""
+
+if horoscope == "Aries":
+    horoscope_text = f"Aries- {fortune_text}" #Use "if" for first in chain of "if" statements to be followed by "else"
+elif horoscope == "Taurus":
+    horoscope_text = f"Taurus- {fortune_text}" #Use "elif" to group all if statements together so that "else" applies in all cases. Otherwise, else just applies to the latest "if".
+elif horoscope == "Gemini":
+    horoscope_text = f"Gemini- {fortune_text}"
+elif horoscope == "Cancer":
+    horoscope_text = f"Cancer- {fortune_text}"
+elif horoscope == "Leo":
+    horoscope_text = f"Leo- {fortune_text}"
+elif horoscope == "Virgo":
+    horoscope_text = f"Virgo- {fortune_text}"
+elif horoscope == "Libra":
+    horoscope_text = f"Libra- {fortune_text}"
+elif horoscope == "Scorpio":
+    horoscope_text = f"Scorpio- {fortune_text}"
+elif horoscope == "Saggitarius":
+    horoscope_text = f"Saggitarius- {fortune_text}"
+elif horoscope == "Capricorn":
+    horoscope_text = f"Capricorn- {fortune_text}"
+elif horoscope == "Aquarius":
+    horoscope_text = f"Aquarius- {fortune_text}"
+elif horoscope == "Pisces":
+    horoscope_text = f"Pisces- {fortune_text}"
+
+else:
+    time.sleep(1)
+    horoscope = (input("Perhaps this is your first time gaining insight from the heavens. I speak of the Zodiac, child! Consult your birth chart, or Google, to uncover the sign of your birth!"
+" Once you have uncovered this, tell me, what is your star sign?"))   
+
+
+print(horoscope_text)
